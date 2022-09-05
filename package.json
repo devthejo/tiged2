@@ -1,6 +1,6 @@
 {
 	"name": "tiged",
-	"version": "2.11.2",
+	"version": "2.11.3",
 	"engines": {
 		"node": ">=8.0.0"
 	},
@@ -17,7 +17,11 @@
 		"type": "git",
 		"url": "git+https://github.com/tiged/tiged.git"
 	},
-	"keywords": ["scaffolding", "template", "git"],
+	"keywords": [
+		"scaffolding",
+		"template",
+		"git"
+	],
 	"author": "tiged",
 	"license": "MIT",
 	"bugs": {
@@ -50,14 +54,23 @@
 		"rollup-plugin-commonjs": "10.1.0",
 		"source-map-support": "0.5.19"
 	},
-	"files": ["src", "help.md"],
+	"files": [
+		"src",
+		"help.md"
+	],
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
 	},
 	"lint-staged": {
-		"*.{js}": ["eslint --fix", "git add"],
-		"*.{js, json, yml, md}": ["prettier --write", "git add"]
+		"*.{js}": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.{js, json, yml, md}": [
+			"prettier --write",
+			"git add"
+		]
 	}
 }
